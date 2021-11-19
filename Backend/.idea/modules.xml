@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NetworkQuiz.iml" filepath="$PROJECT_DIR$/.idea/modules/NetworkQuiz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetworkQuiz/NetworkQuizBackend.iml" filepath="$PROJECT_DIR$/NetworkQuiz/NetworkQuizBackend.iml" />
+    </modules>
+  </component>
+</project>
