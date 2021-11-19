@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MyProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_profile" />
+
+        <TextView
+            android:id="@+id/myProfileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="My Profile"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="195dp"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/positionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:elevation="15sp"
+                android:text="position"
+                android:textColor="@color/colorYellow"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/starImageView"
+                app:layout_constraintEnd_toEndOf="@id/starImageView"
+                app:layout_constraintStart_toStartOf="@id/starImageView"
+                app:layout_constraintTop_toTopOf="@id/starImageView" />
+
+            <TextView
+                android:id="@+id/positionNumberView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="15sp"
+                android:shadowColor="@color/colorBlack"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="4"
+                android:text="404"
+                android:textColor="@color/colorYellow"
+                android:textSize="44sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/starImageView"
+                app:layout_constraintEnd_toEndOf="@id/starImageView"
+                app:layout_constraintStart_toStartOf="@id/starImageView"
+                app:layout_constraintTop_toBottomOf="@id/positionTextView" />
+
+            <ImageView
+                android:id="@+id/starImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_star" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:text="CoolUsername"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/gamesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="games"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/pointsText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/usernameTextView" />
+
+                <TextView
+                    android:id="@+id/gamesNumberView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="10"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/startNewGameButton"
+                    app:layout_constraintEnd_toStartOf="@+id/pointsNumberView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gamesText"
+                    app:layout_constraintVertical_bias="0.074" />
+
+                <TextView
+                    android:id="@+id/pointsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="points"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/accuracyText"
+                    app:layout_constraintStart_toEndOf="@id/gamesText"
+                    app:layout_constraintTop_toBottomOf="@id/usernameTextView" />
+
+                <TextView
+                    android:id="@+id/pointsNumberView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="220"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/accuracyPercentageView"
+                    app:layout_constraintStart_toEndOf="@id/gamesNumberView"
+                    app:layout_constraintTop_toBottomOf="@id/pointsText" />
+
+                <TextView
+                    android:id="@+id/accuracyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="correct"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/pointsText"
+                    app:layout_constraintTop_toBottomOf="@id/usernameTextView" />
+
+                <TextView
+                    android:id="@+id/accuracyPercentageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="80%"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/startNewGameButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pointsNumberView"
+                    app:layout_constraintTop_toBottomOf="@id/accuracyText"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/startNewGameButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_edged_button_yellow"
+                    android:padding="10sp"
+                    android:paddingStart="60sp"
+                    android:paddingEnd="60sp"
+                    android:text="START NEW GAME"
+                    android:textColor="@color/colorDarkBlue"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.52"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pointsNumberView"
+                    app:layout_constraintVertical_bias="0.87" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/leaderboardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            app:cardCornerRadius="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayout3">
+
+            <Button
+                android:id="@+id/leaderboardButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_leaderboard"
+                android:text="View Leaderboard"
+                android:textColor="@color/colorDarkBlue"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

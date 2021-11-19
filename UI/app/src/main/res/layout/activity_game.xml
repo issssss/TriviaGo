@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBlue"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/clockImage"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_clock" />
+
+    <TextView
+        android:id="@+id/timeLeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:shadowColor="@color/colorBlack"
+        android:text="Time Left"
+        android:textColor="@color/colorYellow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/clockImage"
+        app:layout_constraintStart_toStartOf="@id/clockImage"
+        app:layout_constraintTop_toTopOf="@id/clockImage"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <TextView
+        android:id="@+id/remainingMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="5sp"
+        android:text="09"
+        android:textColor="@color/colorBlack"
+        android:textSize="44sp"
+        app:layout_constraintStart_toStartOf="@id/clockImage"
+        app:layout_constraintTop_toBottomOf="@id/timeLeftText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="16dp"
+        android:text=":"
+        android:textSize="44sp"
+        app:layout_constraintStart_toStartOf="@+id/remainingMinutes"
+        app:layout_constraintTop_toBottomOf="@id/timeLeftText" />
+
+    <TextView
+        android:id="@+id/remainingSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="5sp"
+        android:text="30"
+        android:textColor="@color/colorBlack"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="@+id/clockImage"
+        app:layout_constraintTop_toBottomOf="@id/timeLeftText" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="372dp"
+        android:layout_height="553dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clockImage">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

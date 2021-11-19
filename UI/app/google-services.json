@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "498059946286",
+    "project_id": "triviagoproject",
+    "storage_bucket": "triviagoproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498059946286:android:dac414cf32cdd30c8f32bf",
+        "android_client_info": {
+          "package_name": "hr.fer.ruazosa.networkquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498059946286-leuaht62pekhr0kaspl5ieek8jc0mr9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hr.fer.ruazosa.networkquiz",
+            "certificate_hash": "33117f083aee4bebc15d931aa9d6ad9c9f550fb3"
+          }
+        },
+        {
+          "client_id": "498059946286-6onvfgp1bppjsefaei5a48q5d1222hsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeV_hKl0urzwKVibwYmEYa2wxEe8J2f58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498059946286-6onvfgp1bppjsefaei5a48q5d1222hsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
